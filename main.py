@@ -13,6 +13,7 @@ github_blueprint = make_github_blueprint(client_id=env_to_var("GITHUB_CLIENT_ID"
 
 app.register_blueprint(github_blueprint, url_prefix="/login")
 
+# sass --watch static/scss/style.scss:static/css/style.css
 
 @app.route("/")
 def index():
